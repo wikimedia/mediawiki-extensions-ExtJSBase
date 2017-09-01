@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robert Vogel <vogel@hallowelt.com>"
+		]
+	},
+	"extjsbase-desc": "{{desc|name=ExtJSBase|url=https://www.mediawiki.org/wiki/Extension:ExtJSBase}}",
+	"extjsbase-btn-done": "Label for a botton ends a process with a positive result",
+	"extjsbase-btn-cancel": "Label for a botton ends a process without result"
+}
