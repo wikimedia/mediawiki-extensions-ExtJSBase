@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fader"
+			"Fader",
+			"Bengtsson96"
 		]
 	},
+	"extjsbase-btn-done": "Klar",
 	"extjsbase-btn-cancel": "Avbryt"
 }
