@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Fader",
-			"Bengtsson96"
+			"Bengtsson96",
+			"WikiPhoenix"
 		]
 	},
+	"extjsbase-desc": "Lägger till GPL-versionen av [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Klar",
 	"extjsbase-btn-cancel": "Avbryt"
 }
