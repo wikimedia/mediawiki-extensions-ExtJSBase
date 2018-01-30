@@ -1,9 +1,23 @@
 {
-	"autoload": {
-		"psr-4": {
-			"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit",
-			"MediaWiki\\Extension\\ExtJSBase\\": "src"
+	"name": "mediawiki/extjs-base",
+	"description": "Adds the GPL version of Sencha Inc. ExtJS Rich Internet Application Framework",
+	"keywords": [
+		"mediawiki",
+		"wiki",
+		"extjs"
+	],
+	"license": "GPL-3.0-only",
+	"type": "mediawiki-extension",
+	"homepage": "https://www.mediawiki.org/wiki/Extension:ExtJSBase",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
 		}
+	],
+	"extra": {
+		"installer-name": "ExtJSBase"
 	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "0.9.2",
@@ -18,5 +32,11 @@
 		"fix": [
 			"minus-x fix ."
 		]
-	}
+	},
+	"autoload": {
+		"psr-4": {
+			"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit",
+			"MediaWiki\\Extension\\ExtJSBase\\": "src"
+		}
+    }
 }

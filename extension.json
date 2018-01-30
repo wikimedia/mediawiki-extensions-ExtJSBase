@@ -8,6 +8,13 @@
 	"descriptionmsg": "extjsbase-desc",
 	"license-name": "GPL-3.0-only",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit",
+		"MediaWiki\\Extension\\ExtJSBase\\": "src"
+	},
 	"MessagesDirs": {
 		"ExtJSBase": [
 			"i18n"
@@ -88,8 +95,6 @@
 			}
 		},
 		"ext.extjsbase.MWExt": {
-			"@class": "\\MediaWiki\\Extension\\ExtJSBase\\ResourceModule\\Classes",
-			"@extjsNamespaceRoot":"MWExt",
 			"scripts": [
 				"ext.extjsbase.MWExt.js"
 			],
@@ -100,12 +105,11 @@
 			"dependencies": [
 				"ext.extjsbase.all"
 			],
-			"target": [
+			"targets": [
 				"mobile",
 				"desktop"
 			]
 		}
 	},
-	"load_composer_autoloader" : true,
 	"manifest_version": 2
 }
