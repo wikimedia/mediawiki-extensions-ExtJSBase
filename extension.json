@@ -12,8 +12,8 @@
 		"MediaWiki": ">= 1.31.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit",
-		"MediaWiki\\Extension\\ExtJSBase\\": "src"
+		"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit/",
+		"MediaWiki\\Extension\\ExtJSBase\\": "src/"
 	},
 	"MessagesDirs": {
 		"ExtJSBase": [
