@@ -1,3 +1,12 @@
+/*
+	ExtJS uses "rem" for scaling. Some skins (like Chameleon/Boostrap) set
+	a fixed value to the <html> node, wich results in bad scaling.
+	TODO: Check if this breaks other skins
+*/
+html {
+	font-size: initial;
+}
+
 .mwext-dialog {
 	border-color: rgb(162, 169, 177);
 
@@ -65,4 +74,10 @@
 
 ul.x-list-plain {
 	list-style-image: none;
+}
+
+.mwext-search-trigger-default {
+	width: 30px;
+	/* @embed */
+	background: 0 center #fff url(images/form/search-trigger.png) no-repeat;
 }
