@@ -45,7 +45,8 @@ class ExtJSAll extends \ResourceLoaderFileModule {
 	protected function getScriptFiles( \ResourceLoaderContext $context ) {
 		$this->scripts = array_merge(
 			[ 'extjs/ext-all.js', 'ext.extjsbase.init.js' ],
-			$this->extjsTheme->getScriptFiles()
+			$this->extjsTheme->getScriptFiles(),
+			$this->getOverrideScriptFiles()
 		);
 		$files = parent::getScriptFiles( $context );
 		return $files;
@@ -58,4 +59,26 @@ class ExtJSAll extends \ResourceLoaderFileModule {
 	public function getTargets() {
 		return [ "mobile", "desktop" ];
 	}
+
+	protected function getOverrideScriptFiles() {
+		$overrideBaseDir = "{$this->localBasePath}/MWExt/overrides/";
+		$files = [];
+		$iterator = new \RecursiveIteratorIterator(
+			new \RecursiveDirectoryIterator(
+				$overrideBaseDir,
+				\FilesystemIterator::KEY_AS_PATHNAME|\FilesystemIterator::SKIP_DOTS
+			)
+		);
+
+		foreach( $iterator as $pathname => $fileinfo ) {
+			if( $fileinfo->isDir() ) {
+				continue;
+			}
+
+			$files[] = str_replace( $this->localBasePath, '', $pathname );
+		}
+
+		return $files;
+	}
+
 }
