@@ -44,7 +44,7 @@ class ExtJSAll extends \ResourceLoaderFileModule {
 	 */
 	protected function getScriptFiles( \ResourceLoaderContext $context ) {
 		$this->scripts = array_merge(
-			[ 'extjs/ext-all.js', 'ext.extjsbase.init.js' ],
+			$this->getExtJSScriptFiles( $context ),
 			$this->extjsTheme->getScriptFiles(),
 			$this->getOverrideScriptFiles()
 		);
@@ -77,6 +77,25 @@ class ExtJSAll extends \ResourceLoaderFileModule {
 
 			$files[] = str_replace( $this->localBasePath, '', $pathname );
 		}
+
+		return $files;
+	}
+
+	/**
+	 *
+	 * @param \ResourceLoaderContext $context
+	 * @return string[]
+	 */
+	protected function getExtJSScriptFiles( $context ) {
+		$files = [];
+		if( $context->getDebug() ) {
+			$files[] = 'extjs/ext-all-debug.js';
+		}
+		else {
+			$files[] = 'extjs/ext-all.js';
+		}
+
+		$files[] = 'ext.extjsbase.init.js';
 
 		return $files;
 	}
