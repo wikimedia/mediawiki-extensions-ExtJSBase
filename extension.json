@@ -94,6 +94,26 @@
 				"zh-tw":  [ "extjs/locale/locale-zh_TW.js" ]
 			}
 		},
+		"ext.extjsbase.charts": {
+			"class": "\\MediaWiki\\Extension\\ExtJSBase\\ResourceModule\\ExtJSCharts",
+			"dependencies": [
+				"ext.extjsbase.all"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		},
+		"ext.extjsbase.ux": {
+			"class": "\\MediaWiki\\Extension\\ExtJSBase\\ResourceModule\\ExtJSUX",
+			"dependencies": [
+				"ext.extjsbase.all"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		},
 		"ext.extjsbase.MWExt": {
 			"scripts": [
 				"ext.extjsbase.MWExt.js"
