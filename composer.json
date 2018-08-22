@@ -38,5 +38,5 @@
 			"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit",
 			"MediaWiki\\Extension\\ExtJSBase\\": "src"
 		}
-    }
+	}
 }
