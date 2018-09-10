@@ -1,5 +1,6 @@
 # Post build changes
 
+## CSS
 Unfortunately the "reset" CSS of ExtJS can not be disabled by using the build
 process of the theme.
 
@@ -12,3 +13,10 @@ produced by the build process:
 
 	font-size:15px --> font-size:0.8rem
 	"15px/" --> "0.8rem/"
+
+## Sprite images
+The following images have been replaced by custom ones to better match
+MediaWiki UI:
+
+    theme-mediawiki-touch/images/form/checkbox.png
+    theme-mediawiki-touch/images/form/radio.png
