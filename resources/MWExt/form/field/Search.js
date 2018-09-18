@@ -41,19 +41,57 @@ Ext.define('MWExt.form.field.Search', {
 	xtype: 'searchfield',
 	alternateClassName: 'Ext.form.Search',
 
+	paramName : 'query',
+	hasSearch : false,
+
 	component: {
 		type: 'search'
 	},
 
 	triggers: {
+		clear: {
+			cls: 'mwext-clear-trigger',
+			handler: function() {
+				this.onTrigger1Click();
+			},
+			side: 'right'
+		},
 		search: {
 			cls: 'mwext-search-trigger',
 			handler: function() {
-				this.reset();
+				this.onTrigger2Click();
 			},
-			side: 'left'
+			side: 'right'
 		}
 	},
 
-	classCls: Ext.baseCSSPrefix + 'searchfield'
+	classCls: Ext.baseCSSPrefix + 'searchfield',
+
+	onTrigger1Click : function() {
+		var me = this;
+
+		me.setValue( '' );
+		me.store.removeFilter( me.paramName );
+		me.hasSearch = false;
+		me.updateLayout();
+	},
+
+	onTrigger2Click : function() {
+		var me = this,
+			value = me.getValue();
+
+		if ( value.length > 0 ) {
+			me.store.addFilter( {
+				id: me.paramName,
+				property: me.paramName,
+				value: value,
+				type: 'string',
+				comparison: 'ct'
+			});
+			me.hasSearch = true;
+			me.updateLayout();
+		} else {
+			this.onTrigger1Click();
+		}
+	}
 });
