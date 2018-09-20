@@ -83,6 +83,7 @@ Ext.define( 'MWExt.Dialog', {
 
 		if ( me.fireEvent( 'ok', me, me.getData(), steps ) ) {
 			$.when.apply( $, steps ).then( function() {
+				me.setLoading( false );
 				me.close();
 			});
 		}
