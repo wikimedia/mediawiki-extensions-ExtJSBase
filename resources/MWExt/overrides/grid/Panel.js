@@ -1,8 +1,8 @@
 Ext.override( Ext.grid.Panel, {
 	constructor: function( cfg ) {
-		cfg.listeners = {
+		cfg.listeners = $.extend( {
 			staterestore: this.onStateRestore
-		};
+		}, cfg.listeners || {} );
 		this.callParent( arguments );
 	},
 	onStateRestore: function( grid, state ) {
