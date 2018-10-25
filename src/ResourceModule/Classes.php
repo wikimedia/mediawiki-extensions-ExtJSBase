@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
-class Classes extends \ResourceLoaderFileModule {
+class Classes extends Base {
 
 	const NAMESPACE_ROOT = 'extjsNamespaceRoot';
 

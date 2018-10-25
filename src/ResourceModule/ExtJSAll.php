@@ -4,7 +4,7 @@ namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
 use MediaWiki\Extension\ExtJSBase;
 
-class ExtJSAll extends \ResourceLoaderFileModule {
+class ExtJSAll extends Base {
 
 	/**
 	 *

@@ -4,7 +4,7 @@ namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
 use MediaWiki\Extension\ExtJSBase;
 
-class ExtJSCharts extends \ResourceLoaderFileModule {
+class ExtJSCharts extends Base {
 
 	/**
 	 *
