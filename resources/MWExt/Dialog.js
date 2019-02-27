@@ -76,6 +76,11 @@ Ext.define( 'MWExt.Dialog', {
 		this.callParent( arguments );
 	},
 
+	afterShow: function() {
+		this.setY( window.scrollY + this.getY() );
+		this.callParent( arguments );
+	},
+
 	onBtnOKClick: function () {
 		var me = this;
 		this.setLoading( true );
