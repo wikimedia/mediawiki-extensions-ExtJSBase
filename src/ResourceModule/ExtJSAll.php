@@ -15,10 +15,10 @@ class ExtJSAll extends Base {
 	/**
 	 *
 	 * @param array $options
-	 * @param string $localBasePath
-	 * @param string $remoteBasePath
+	 * @param string|null $localBasePath
+	 * @param string|null $remoteBasePath
 	 */
-	public function __construct( $options = array(), $localBasePath = null, $remoteBasePath = null ) {
+	public function __construct( $options = [], $localBasePath = null, $remoteBasePath = null ) {
 		parent::__construct( $options, $localBasePath, $remoteBasePath );
 		$config = \MediaWiki\MediaWikiServices::getInstance()
 				->getConfigFactory()->makeConfig( 'extjsbase' );
@@ -60,16 +60,20 @@ class ExtJSAll extends Base {
 		return [ "mobile", "desktop" ];
 	}
 
+	/**
+	 * @return string[]
+	 */
 	protected function getOverrideScriptFiles() {
 		$overrideBaseDir = "{$this->localBasePath}/MWExt/overrides/";
 		$files = [];
 		$iterator = new \RecursiveIteratorIterator(
 			new \RecursiveDirectoryIterator(
 				$overrideBaseDir,
-				\FilesystemIterator::KEY_AS_PATHNAME|\FilesystemIterator::SKIP_DOTS
+				\FilesystemIterator::KEY_AS_PATHNAME | \FilesystemIterator::SKIP_DOTS
 			)
 		);
 
+		/** @var \SplFileInfo $fileinfo */
 		foreach( $iterator as $pathname => $fileinfo ) {
 			if( $fileinfo->isDir() ) {
 				continue;

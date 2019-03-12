@@ -11,15 +11,15 @@ class Classes extends Base {
 	/**
 	 *
 	 * @param array $options
-	 * @param string $localBasePath
-	 * @param string $remoteBasePath
+	 * @param string|null $localBasePath
+	 * @param string|null $remoteBasePath
 	 * @throws \Exception
 	 */
-	public function __construct( $options = array(), $localBasePath = null, $remoteBasePath = null ) {
+	public function __construct( $options = [], $localBasePath = null, $remoteBasePath = null ) {
 		parent::__construct( $options, $localBasePath, $remoteBasePath );
 
 		if( !isset( $options[self::NAMESPACE_ROOT] ) ) {
-			throw new \Exception( "No value for '".self::NAMESPACE_ROOT."' provided!" );
+			throw new \Exception( "No value for '" . self::NAMESPACE_ROOT . "' provided!" );
 		}
 		$this->subNamespaceSubfolder = $options[self::NAMESPACE_ROOT];
 	}

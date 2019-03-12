@@ -81,7 +81,6 @@ class Base extends \ResourceLoaderFileModule {
 		return $js;
 	}
 
-
 	/**
 	 * Get the set of language scripts for the given language,
 	 * possibly using a fallback language.

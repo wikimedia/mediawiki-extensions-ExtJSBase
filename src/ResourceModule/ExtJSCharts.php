@@ -2,8 +2,6 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
-use MediaWiki\Extension\ExtJSBase;
-
 class ExtJSCharts extends Base {
 
 	/**
@@ -21,7 +19,7 @@ class ExtJSCharts extends Base {
 		}
 
 		$this->styles = [ $cssFile ];
-		return parent::getStyleFiles( $context );;
+		return parent::getStyleFiles( $context );
 	}
 
 	/**

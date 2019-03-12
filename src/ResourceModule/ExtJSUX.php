@@ -2,8 +2,6 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
-use MediaWiki\Extension\ExtJSBase;
-
 class ExtJSUX extends Base {
 
 	/**
