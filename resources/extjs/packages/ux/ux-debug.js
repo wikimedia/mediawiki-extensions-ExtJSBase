@@ -6002,7 +6002,7 @@ Ext.define('Ext.ux.IFrame', {
  *
  *     // processing....
  *
- *     sb.clearStatus(); // once completeed
+ *     sb.clearStatus(); // once completed
  *
  */
 Ext.define('Ext.ux.statusbar.StatusBar', {
