@@ -18,7 +18,7 @@ class Classes extends Base {
 	public function __construct( $options = [], $localBasePath = null, $remoteBasePath = null ) {
 		parent::__construct( $options, $localBasePath, $remoteBasePath );
 
-		if( !isset( $options[self::NAMESPACE_ROOT] ) ) {
+		if ( !isset( $options[self::NAMESPACE_ROOT] ) ) {
 			throw new \Exception( "No value for '" . self::NAMESPACE_ROOT . "' provided!" );
 		}
 		$this->subNamespaceSubfolder = $options[self::NAMESPACE_ROOT];
@@ -60,7 +60,7 @@ class Classes extends Base {
 		);
 
 		$foundFiles = [];
-		foreach( $files as $name => $fileInfo ){
+		foreach ( $files as $name => $fileInfo ) {
 			$foundFiles[] = str_replace( $this->localBasePath, '', $name );
 		}
 

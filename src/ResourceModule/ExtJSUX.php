@@ -11,10 +11,9 @@ class ExtJSUX extends Base {
 	 */
 	public function getStyleFiles( \ResourceLoaderContext $context ) {
 		$cssFile = 'extjs/packages/ux/';
-		if( $context->getDebug() ) {
+		if ( $context->getDebug() ) {
 			$cssFile .= 'ux-all-debug.css';
-		}
-		else {
+		} else {
 			$cssFile .= 'ux-all.css';
 		}
 
@@ -29,10 +28,9 @@ class ExtJSUX extends Base {
 	 */
 	protected function getScriptFiles( \ResourceLoaderContext $context ) {
 		$jsFile = 'extjs/packages/ux/';
-		if( $context->getDebug() ) {
+		if ( $context->getDebug() ) {
 			$jsFile .= 'ux-debug.js';
-		}
-		else {
+		} else {
 			$jsFile .= 'ux.js';
 		}
 

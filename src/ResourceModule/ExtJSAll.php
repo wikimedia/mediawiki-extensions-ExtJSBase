@@ -74,8 +74,8 @@ class ExtJSAll extends Base {
 		);
 
 		/** @var \SplFileInfo $fileinfo */
-		foreach( $iterator as $pathname => $fileinfo ) {
-			if( $fileinfo->isDir() ) {
+		foreach ( $iterator as $pathname => $fileinfo ) {
+			if ( $fileinfo->isDir() ) {
 				continue;
 			}
 
@@ -92,10 +92,9 @@ class ExtJSAll extends Base {
 	 */
 	protected function getExtJSScriptFiles( $context ) {
 		$files = [];
-		if( $context->getDebug() ) {
+		if ( $context->getDebug() ) {
 			$files[] = 'extjs/ext-all-debug.js';
-		}
-		else {
+		} else {
 			$files[] = 'extjs/ext-all.js';
 		}
 

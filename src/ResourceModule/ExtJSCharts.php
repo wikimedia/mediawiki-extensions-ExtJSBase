@@ -11,10 +11,9 @@ class ExtJSCharts extends Base {
 	 */
 	public function getStyleFiles( \ResourceLoaderContext $context ) {
 		$cssFile = 'extjs/packages/charts/';
-		if( $context->getDebug() ) {
+		if ( $context->getDebug() ) {
 			$cssFile .= 'charts-all-debug.css';
-		}
-		else {
+		} else {
 			$cssFile .= 'charts-all.css';
 		}
 
@@ -29,10 +28,9 @@ class ExtJSCharts extends Base {
 	 */
 	protected function getScriptFiles( \ResourceLoaderContext $context ) {
 		$jsFile = 'extjs/packages/charts/';
-		if( $context->getDebug() ) {
+		if ( $context->getDebug() ) {
 			$jsFile .= 'charts-debug.js';
-		}
-		else {
+		} else {
 			$jsFile .= 'charts.js';
 		}
 
