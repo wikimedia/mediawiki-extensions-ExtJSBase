@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
 use ResourceLoaderContext;
+use Language;
 use OutputPage;
 
 /**
