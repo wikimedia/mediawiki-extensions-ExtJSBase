@@ -23,7 +23,7 @@ class Base extends \ResourceLoaderFileModule {
 	 */
 	public function getScript( ResourceLoaderContext $context ) {
 		$files = $this->getScriptFiles( $context );
-		return $this->getDeprecationInformation() . $this->readScriptFiles( $files );
+		return $this->getDeprecationInformation( $context ) . $this->readScriptFiles( $files );
 	}
 
 	/**
