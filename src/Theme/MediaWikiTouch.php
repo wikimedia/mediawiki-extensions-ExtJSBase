@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\ExtJSBase\Theme;
 
-use \MediaWiki\Extension\ExtJSBase\ITheme;
+use MediaWiki\Extension\ExtJSBase\ITheme;
 
 class MediaWikiTouch implements ITheme {
 
