@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Incelemeelemani"
+			"Incelemeelemani",
+			"BaRaN6161 TURK"
 		]
 	},
 	"extjsbase-btn-done": "Tamam",
-	"extjsbase-btn-cancel": "Vazgeç"
+	"extjsbase-btn-cancel": "Vazgeç",
+	"extjsbase-desc": "[https://www.sencha.com/products/extjs Sencha Inc. ExtJS Zengin İnternet Uygulama Çerçevesi]'nin GPL sürümünü ekler."
 }
