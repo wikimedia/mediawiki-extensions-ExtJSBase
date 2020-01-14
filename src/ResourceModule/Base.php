@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
-use ResourceLoaderContext;
 use Language;
 use OutputPage;
+use ResourceLoaderContext;
 
 /**
  * This class basically contains copies of some methods from the base class that have been changed
