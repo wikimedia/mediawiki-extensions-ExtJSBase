@@ -14,9 +14,6 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\ExtJSBase\\": "src/"
 	},
-	"TestAutoloadNamespaces": {
-		"MediaWiki\\Extension\\ExtJSBase\\Tests\\": "tests/phpunit/"
-	},
 	"MessagesDirs": {
 		"ExtJSBase": [
 			"i18n"
