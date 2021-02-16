@@ -119,7 +119,8 @@
 			],
 			"messages": [
 				"extjsbase-btn-done",
-				"extjsbase-btn-cancel"
+				"extjsbase-btn-cancel",
+				"extjsbase-label-search"
 			],
 			"dependencies": [
 				"ext.extjsbase.all"

@@ -40,6 +40,7 @@ Ext.define('MWExt.form.field.Search', {
 	extend: 'Ext.form.field.Text',
 	xtype: 'searchfield',
 	alternateClassName: 'Ext.form.Search',
+	fieldLabel: mw.message( 'extjsbase-label-search' ).plain(),
 
 	paramName : 'query',
 	hasSearch : false,
