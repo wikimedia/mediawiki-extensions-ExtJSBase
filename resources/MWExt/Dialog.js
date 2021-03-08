@@ -5,7 +5,6 @@ Ext.define( 'MWExt.Dialog', {
 	closeAction: 'hide',
 	title: '',
 	resizable: false,
-	cls: 'mwext-dialog',
 	modal: true,
 	draggable: false,
 	layout: 'fit',
@@ -32,6 +31,9 @@ Ext.define( 'MWExt.Dialog', {
 		//Custom Settings
 		this.currentData = {};
 		this.callParent(arguments);
+		//Ensure proper styling
+		this.cls = this.cls || '';
+		this.cls += ' mwext-dialog';
 	},
 
 	initComponent: function() {
