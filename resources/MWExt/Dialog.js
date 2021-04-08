@@ -79,8 +79,9 @@ Ext.define( 'MWExt.Dialog', {
 	},
 
 	afterShow: function() {
-		var windowCenter = Math.floor( window.innerHeight/2 );
-		this.setY( window.scrollY + ( windowCenter - this.getHeight() ) );
+		var windowCenter = Math.floor( window.innerHeight / 2 );
+		var halfHeight = Math.floor( this.getHeight() / 2 );
+		this.setY( window.scrollY + Math.abs( windowCenter - halfHeight ) );
 		this.callParent( arguments );
 	},
 
