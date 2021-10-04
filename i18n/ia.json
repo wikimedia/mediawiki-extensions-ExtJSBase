@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"extjsbase-desc": "Adde le version GPL de [https://www.sencha.com/products/extjs ExtJS Rich Internet Application Framework] de Sencha Inc.",
+	"extjsbase-btn-done": "Facite",
+	"extjsbase-btn-cancel": "Cancellar",
+	"extjsbase-label-search": "Cercar"
+}
