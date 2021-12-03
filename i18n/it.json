@@ -6,5 +6,6 @@
 	},
 	"extjsbase-desc": "Aggiunge la versione GPL del [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Fatto",
-	"extjsbase-btn-cancel": "Annulla"
+	"extjsbase-btn-cancel": "Annulla",
+	"extjsbase-label-search": "Cerca"
 }
