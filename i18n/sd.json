@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Indus Asia"
+			"Indus Asia",
+			"Mehtab ahmed"
 		]
 	},
 	"extjsbase-btn-done": "ٿي ويو",
-	"extjsbase-btn-cancel": "رد"
+	"extjsbase-btn-cancel": "رد ڪريو"
 }
