@@ -17,7 +17,7 @@ class ExtJSCharts extends Base {
 			$cssFile .= 'charts-all.css';
 		}
 
-		$this->styles = [ $cssFile ];
+		$this->styles = [ 'all' => $cssFile ];
 		return parent::getStyleFiles( $context );
 	}
 
