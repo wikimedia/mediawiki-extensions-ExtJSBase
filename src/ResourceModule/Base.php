@@ -2,9 +2,11 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
-use Language;
+use MediaWiki\Languages\LanguageFallback;
+use MediaWiki\MediaWikiServices;
 use OutputPage;
 use ResourceLoaderContext;
+use RuntimeException;
 
 /**
  * This class basically contains copies of some methods from the base class that have been changed
@@ -19,11 +21,27 @@ class Base extends \ResourceLoaderFileModule {
 	 * Gets all scripts for a given context concatenated together.
 	 *
 	 * @param ResourceLoaderContext $context Context in which to generate script
-	 * @return string JavaScript code for $context
+	 * @return string|array JavaScript code for $context, or package files data structure
 	 */
 	public function getScript( ResourceLoaderContext $context ) {
+		$deprecationScript = $this->getDeprecationInformation( $context );
+		if ( $this->packageFiles !== null ) {
+			$packageFiles = $this->getPackageFiles( $context );
+			foreach ( $packageFiles['files'] as &$file ) {
+				if ( $file['type'] === 'script+style' ) {
+					$file['content'] = $file['content']['script'];
+					$file['type'] = 'script';
+				}
+			}
+			if ( $deprecationScript ) {
+				$mainFile =& $packageFiles['files'][$packageFiles['main']];
+				$mainFile['content'] = $deprecationScript . $mainFile['content'];
+			}
+			return $packageFiles;
+		}
+
 		$files = $this->getScriptFiles( $context );
-		return $this->getDeprecationInformation( $context ) . $this->readScriptFiles( $files );
+		return $deprecationScript . $this->readScriptFiles( $files );
 	}
 
 	/**
@@ -64,8 +82,8 @@ class Base extends \ResourceLoaderFileModule {
 	 * Get the contents of a list of JavaScript files. Helper for getScript().
 	 *
 	 * @param array $scripts List of file paths to scripts to read, remap and concetenate
-	 * @return string Concatenated and remapped JavaScript data from $scripts
-	 * @throws MWException
+	 * @return string Concatenated JavaScript data from $scripts
+	 * @throws RuntimeException
 	 */
 	private function readScriptFiles( array $scripts ) {
 		if ( empty( $scripts ) ) {
@@ -74,13 +92,27 @@ class Base extends \ResourceLoaderFileModule {
 		$js = '';
 		foreach ( array_unique( $scripts, SORT_REGULAR ) as $fileName ) {
 			$localPath = $this->getLocalPath( $fileName );
-			if ( !file_exists( $localPath ) ) {
-				throw new MWException( __METHOD__ . ": script file not found: \"$localPath\"" );
-			}
-			$contents = $this->stripBom( file_get_contents( $localPath ) );
+			$contents = $this->getFileContents( $localPath, 'script' );
 			$js .= $contents . "\n";
 		}
 		return $js;
+	}
+
+	/**
+	 * Helper method for getting a file.
+	 *
+	 * @param string $localPath The path to the resource to load
+	 * @param string $type The type of resource being loaded (for error reporting only)
+	 * @throws RuntimeException If the supplied path is not found, or not a path
+	 * @return string
+	 */
+	private function getFileContents( $localPath, $type ) {
+		if ( !is_file( $localPath ) ) {
+			throw new RuntimeException(
+				__METHOD__ . ": $type file not found, or is not a file: \"$localPath\""
+			);
+		}
+		return $this->stripBom( file_get_contents( $localPath ) );
 	}
 
 	/**
@@ -95,7 +127,8 @@ class Base extends \ResourceLoaderFileModule {
 		if ( $scripts ) {
 			return $scripts;
 		}
-		$fallbacks = Language::getFallbacksFor( $lang );
+		$fallbacks = MediaWikiServices::getInstance()->getLanguageFallback()
+			->getAll( $lang, LanguageFallback::MESSAGES );
 		foreach ( $fallbacks as $lang ) {
 			$scripts = self::tryForKey( $this->languageScripts, $lang );
 			if ( $scripts ) {

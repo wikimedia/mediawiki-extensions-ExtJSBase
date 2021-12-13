@@ -33,7 +33,7 @@ class ExtJSAll extends Base {
 	 */
 	public function getStyleFiles( \ResourceLoaderContext $context ) {
 		return [
-			$this->extjsTheme->getStyleFiles()
+			'all' => $this->extjsTheme->getStyleFiles()
 		];
 	}
 

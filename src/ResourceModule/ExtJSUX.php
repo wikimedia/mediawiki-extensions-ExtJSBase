@@ -17,7 +17,7 @@ class ExtJSUX extends Base {
 			$cssFile .= 'ux-all.css';
 		}
 
-		$this->styles = [ $cssFile ];
+		$this->styles = [ 'all' => $cssFile ];
 		return parent::getStyleFiles( $context );
 	}
 
