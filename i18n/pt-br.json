@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
 		]
 	},
 	"extjsbase-desc": "Acrescenta a versão GPL do produto [https://www.sencha.com/products/extjs ExtJS Rich Internet Application Framework, de Sencha Inc.]",
 	"extjsbase-btn-done": "Feito",
-	"extjsbase-btn-cancel": "Cancelar"
+	"extjsbase-btn-cancel": "Cancelar",
+	"extjsbase-label-search": "Pesquisar"
 }

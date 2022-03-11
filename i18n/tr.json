@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"Incelemeelemani",
-			"BaRaN6161 TURK"
+			"Wolvete"
 		]
 	},
-	"extjsbase-btn-done": "Tamam",
-	"extjsbase-btn-cancel": "Vazgeç",
-	"extjsbase-desc": "[https://www.sencha.com/products/extjs Sencha Inc. ExtJS Zengin İnternet Uygulama Çerçevesi]'nin GPL sürümünü ekler."
+	"extjsbase-btn-done": "Yapıldı",
+	"extjsbase-btn-cancel": "İptal",
+	"extjsbase-desc": "[https://www.sencha.com/products/extjs Sencha Inc. ExtJS Zengin İnternet Uygulama Çerçevesi]'nin GPL sürümünü ekler.",
+	"extjsbase-label-search": "Ara"
 }

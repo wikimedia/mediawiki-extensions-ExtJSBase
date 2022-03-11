@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Renessaince"
 		]
 	},
 	"extjsbase-desc": "Дадае GPL-вэрсію [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Зроблена",
-	"extjsbase-btn-cancel": "Адмяніць"
+	"extjsbase-btn-cancel": "Скасаваць"
 }

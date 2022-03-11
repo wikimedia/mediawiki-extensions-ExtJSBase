@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"A2y4",
 			"Otokoume"
 		]
 	},
 	"extjsbase-btn-done": "完了",
-	"extjsbase-btn-cancel": "キャンセル"
+	"extjsbase-btn-cancel": "キャンセル",
+	"extjsbase-label-search": "検索"
 }

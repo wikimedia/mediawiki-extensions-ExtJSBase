@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"Vlad5250"
 		]
 	},
 	"extjsbase-desc": "Добавляет ОЈЛ-версию [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Готово",
-	"extjsbase-btn-cancel": "Отмена"
+	"extjsbase-btn-cancel": "Отмена",
+	"extjsbase-label-search": "Поиск"
 }

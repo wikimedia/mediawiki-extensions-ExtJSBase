@@ -6,5 +6,6 @@
 	},
 	"extjsbase-desc": "Додава ОЈЛ-верзија на [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Готово",
-	"extjsbase-btn-cancel": "Откажи"
+	"extjsbase-btn-cancel": "Откажи",
+	"extjsbase-label-search": "Пребарај"
 }

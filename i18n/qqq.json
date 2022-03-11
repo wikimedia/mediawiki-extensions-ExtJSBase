@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robert Vogel <vogel@hallowelt.com>",
-			"Robby"
+			"Robby",
+			"Robert Vogel <vogel@hallowelt.com>"
 		]
 	},
 	"extjsbase-desc": "{{desc|name=ExtJSBase|url=https://www.mediawiki.org/wiki/Extension:ExtJSBase}}",
