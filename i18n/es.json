@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"DiegoAmbrocio",
 			"Macofe"
 		]
 	},
 	"extjsbase-btn-done": "Hecho",
-	"extjsbase-btn-cancel": "Cancelar"
+	"extjsbase-btn-cancel": "Cancelar",
+	"extjsbase-label-search": "Buscar"
 }
