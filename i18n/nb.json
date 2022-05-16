@@ -6,5 +6,6 @@
 	},
 	"extjsbase-desc": "Legger til GPL-versjonen av [https://www.sencha.com/products/extjs Sencha Inc.s ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Ferdig",
-	"extjsbase-btn-cancel": "Avbryt"
+	"extjsbase-btn-cancel": "Avbryt",
+	"extjsbase-label-search": "Søk"
 }
