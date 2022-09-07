@@ -6,5 +6,6 @@
 	},
 	"extjsbase-desc": "Dodaje OJL-verzija [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Urađeno",
-	"extjsbase-btn-cancel": "Otkaži"
+	"extjsbase-btn-cancel": "Otkaži",
+	"extjsbase-label-search": "Traži"
 }
