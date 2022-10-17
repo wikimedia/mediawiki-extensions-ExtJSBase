@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Erelon",
 			"Steeve815"
 		]
 	},
+	"extjsbase-desc": "מוסיף את גרסת ה־GPL של [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "סיום",
-	"extjsbase-btn-cancel": "ביטול"
+	"extjsbase-btn-cancel": "ביטול",
+	"extjsbase-label-search": "חיפוש"
 }
