@@ -158,6 +158,7 @@ Ext.define( 'MWExt.Dialog', {
 	makeButtons: function() {
 		this.btnOK = new Ext.Button({
 			text: mw.message('extjsbase-btn-done').plain(),
+			ariaLabel: mw.message('extjsbase-btn-done').plain(),
 			id: this.getId()+'-btn-ok',
 			cls: 'mwext-button mwext-ok mwext-primary mwext-progressive'
 		});
@@ -165,6 +166,7 @@ Ext.define( 'MWExt.Dialog', {
 
 		this.btnCancel = new Ext.Button({
 			text: mw.message('extjsbase-btn-cancel').plain(),
+			ariaLabel: mw.message('extjsbase-btn-cancel').plain(),
 			id: this.getId()+'-btn-cancel',
 			cls: 'mwext-button mwext-cancel mwext-safe'
 		});
