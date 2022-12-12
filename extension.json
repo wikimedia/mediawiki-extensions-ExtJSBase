@@ -2,6 +2,7 @@
 	"name": "ExtJSBase",
 	"version": "2.0.0",
 	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]",
 		"Robert Vogel"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:ExtJSBase",
