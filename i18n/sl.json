@@ -5,5 +5,7 @@
 		]
 	},
 	"extjsbase-btn-cancel": "Prekliči",
-	"extjsbase-btn-done": "Končano"
+	"extjsbase-btn-done": "Končano",
+	"extjsbase-desc": "Doda različico GPL ogrodja [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
+	"extjsbase-label-search": "Išči"
 }
