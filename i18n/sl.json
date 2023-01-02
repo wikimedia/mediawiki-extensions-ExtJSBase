@@ -4,6 +4,8 @@
 			"Eleassar"
 		]
 	},
+	"extjsbase-desc": "Doda različico GPL ogrodja [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Končano",
-	"extjsbase-btn-cancel": "Prekliči"
+	"extjsbase-btn-cancel": "Prekliči",
+	"extjsbase-label-search": "Išči"
 }
