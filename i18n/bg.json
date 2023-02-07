@@ -4,5 +4,6 @@
 			"StanProg"
 		]
 	},
-	"extjsbase-btn-cancel": "Отказ"
+	"extjsbase-btn-cancel": "Отказ",
+	"extjsbase-label-search": "Търсене"
 }
