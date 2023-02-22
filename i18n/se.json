@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
 			"Yupik"
 		]
 	},
-	"extjsbase-label-search": "Oza"
+	"extjsbase-label-search": "Oza",
+	"extjsbase-btn-cancel": "Šluhtte"
 }
