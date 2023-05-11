@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"extjsbase-desc": "Prideda [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework] GPL versija",
+	"extjsbase-btn-done": "Atlikta",
+	"extjsbase-btn-cancel": "Atšaukti",
+	"extjsbase-label-search": "Ieškoti"
+}
