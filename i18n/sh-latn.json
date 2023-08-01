@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"extjsbase-desc": "Dodaje OJL-verzija [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
+	"extjsbase-btn-done": "Gotovo",
+	"extjsbase-btn-cancel": "Otkaži",
+	"extjsbase-label-search": "Traži"
+}
