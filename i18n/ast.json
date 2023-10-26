@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"extjsbase-desc": "Amestar la versión GPL de [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
 	"extjsbase-btn-done": "Fecho",
-	"extjsbase-btn-cancel": "Encaboxar"
+	"extjsbase-btn-cancel": "Zarrar"
 }
