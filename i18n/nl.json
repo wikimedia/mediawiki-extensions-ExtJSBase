@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
 	"extjsbase-desc": "Voegt de GPL versie van het [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework] toe",
 	"extjsbase-btn-done": "Afgerond",
-	"extjsbase-btn-cancel": "Annuleren"
+	"extjsbase-btn-cancel": "Annuleren",
+	"extjsbase-label-search": "Zoeken"
 }
