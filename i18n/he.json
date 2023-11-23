@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Erelon",
-			"Steeve815",
-			"Amire80"
+			"Steeve815"
 		]
 	},
 	"extjsbase-desc": "מוסיף את גרסת ה־GPL של [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
