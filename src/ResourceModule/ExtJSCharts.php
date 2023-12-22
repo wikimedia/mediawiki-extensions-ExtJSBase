@@ -2,14 +2,15 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
+
 class ExtJSCharts extends Base {
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	public function getStyleFiles( \ResourceLoaderContext $context ) {
+	public function getStyleFiles( ResourceLoaderContext $context ) {
 		$cssFile = 'extjs/packages/charts/';
 		if ( $context->getDebug() ) {
 			$cssFile .= 'charts-all-debug.css';
@@ -22,11 +23,10 @@ class ExtJSCharts extends Base {
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	protected function getScriptFiles( \ResourceLoaderContext $context ) {
+	protected function getScriptFiles( ResourceLoaderContext $context ) {
 		$jsFile = 'extjs/packages/charts/';
 		if ( $context->getDebug() ) {
 			$jsFile .= 'charts-debug.js';
