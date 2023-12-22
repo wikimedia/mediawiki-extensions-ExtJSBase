@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
 use MediaWiki\Extension\ExtJSBase;
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 
 class ExtJSAll extends Base {
 
@@ -27,22 +28,20 @@ class ExtJSAll extends Base {
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	public function getStyleFiles( \ResourceLoaderContext $context ) {
+	public function getStyleFiles( ResourceLoaderContext $context ) {
 		return [
 			'all' => $this->extjsTheme->getStyleFiles()
 		];
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	protected function getScriptFiles( \ResourceLoaderContext $context ) {
+	protected function getScriptFiles( ResourceLoaderContext $context ) {
 		$this->scripts = array_merge(
 			$this->getExtJSScriptFiles( $context ),
 			$this->extjsTheme->getScriptFiles(),
@@ -86,8 +85,7 @@ class ExtJSAll extends Base {
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return string[]
 	 */
 	protected function getExtJSScriptFiles( $context ) {

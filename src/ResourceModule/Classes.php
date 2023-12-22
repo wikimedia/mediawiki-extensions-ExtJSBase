@@ -2,6 +2,8 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
+
 class Classes extends Base {
 
 	const NAMESPACE_ROOT = 'extjsNamespaceRoot';
@@ -25,22 +27,20 @@ class Classes extends Base {
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	public function getStyleFiles( \ResourceLoaderContext $context ) {
+	public function getStyleFiles( ResourceLoaderContext $context ) {
 		return [
 			$this->findFiles( [ 'css', 'less' ] )
 		];
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	protected function getScriptFiles( \ResourceLoaderContext $context ) {
+	protected function getScriptFiles( ResourceLoaderContext $context ) {
 		return $this->findFiles( [ 'js' ] );
 	}
 
