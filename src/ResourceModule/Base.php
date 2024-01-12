@@ -4,8 +4,8 @@ namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 use OutputPage;
-use ResourceLoaderContext;
 use RuntimeException;
 
 /**

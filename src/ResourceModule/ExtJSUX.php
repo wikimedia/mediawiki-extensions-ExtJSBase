@@ -2,14 +2,15 @@
 
 namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
+
 class ExtJSUX extends Base {
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	public function getStyleFiles( \ResourceLoaderContext $context ) {
+	public function getStyleFiles( ResourceLoaderContext $context ) {
 		$cssFile = 'extjs/packages/ux/';
 		if ( $context->getDebug() ) {
 			$cssFile .= 'ux-all-debug.css';
@@ -22,11 +23,10 @@ class ExtJSUX extends Base {
 	}
 
 	/**
-	 *
-	 * @param \ResourceLoaderContext $context
+	 * @param ResourceLoaderContext $context
 	 * @return array
 	 */
-	protected function getScriptFiles( \ResourceLoaderContext $context ) {
+	protected function getScriptFiles( ResourceLoaderContext $context ) {
 		$jsFile = 'extjs/packages/ux/';
 		if ( $context->getDebug() ) {
 			$jsFile .= 'ux-debug.js';
