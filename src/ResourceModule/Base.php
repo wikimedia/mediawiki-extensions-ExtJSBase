@@ -15,7 +15,7 @@ use RuntimeException;
  * Even better: The custom RL classes in this extension should not build on
  * \ResourceLoaderFileModule but on \ResourceLoaderModule
  */
-class Base extends \ResourceLoaderFileModule {
+class Base extends \MediaWiki\ResourceLoader\FileModule {
 
 	/**
 	 * Gets all scripts for a given context concatenated together.
