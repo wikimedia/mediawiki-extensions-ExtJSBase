@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\ExtJSBase\ResourceModule;
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
+use MediaWiki\ResourceLoader\FileModule as ResourceLoaderFileModule;
 use OutputPage;
 use RuntimeException;
 
@@ -13,9 +14,9 @@ use RuntimeException;
  * from 'protected' to 'private' in https://gerrit.wikimedia.org/r/#/c/mediawiki/core/+/442008/
  * It needs to be kept in sync with the base class in future releases.
  * Even better: The custom RL classes in this extension should not build on
- * \ResourceLoaderFileModule but on \ResourceLoaderModule
+ * ResourceLoaderFileModule but on ResourceLoaderModule
  */
-class Base extends \ResourceLoaderFileModule {
+class Base extends ResourceLoaderFileModule {
 
 	/**
 	 * Gets all scripts for a given context concatenated together.
