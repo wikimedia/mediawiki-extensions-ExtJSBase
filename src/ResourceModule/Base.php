@@ -25,7 +25,7 @@ class Base extends ResourceLoaderFileModule {
 	 * @return string|array JavaScript code for $context, or package files data structure
 	 */
 	public function getScript( ResourceLoaderContext $context ) {
-		$deprecationScript = $this->getDeprecationInformation( $context );
+		$deprecationScript = $this->getDeprecationWarning() ?: '';
 		if ( $this->packageFiles !== null ) {
 			$packageFiles = $this->getPackageFiles( $context );
 			foreach ( $packageFiles['files'] as &$file ) {
