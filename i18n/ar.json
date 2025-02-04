@@ -3,11 +3,12 @@
 		"authors": [
 			"Meno25",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"XIDME"
 		]
 	},
 	"extjsbase-desc": "يضيف إصدار GPL من [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich إطار عمل تطبيق إنترنت غني]",
 	"extjsbase-btn-done": "تم",
-	"extjsbase-btn-cancel": "ألغ",
+	"extjsbase-btn-cancel": "إلغاء",
 	"extjsbase-label-search": "بحث"
 }
