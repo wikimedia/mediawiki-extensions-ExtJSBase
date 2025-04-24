@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung",
-			"BadDog"
+			"BadDog",
+			"Winston Sung"
 		]
 	},
 	"extjsbase-desc": "Dodaje OJL-verzija [https://www.sencha.com/products/extjs Sencha Inc. ExtJS Rich Internet Application Framework]",
