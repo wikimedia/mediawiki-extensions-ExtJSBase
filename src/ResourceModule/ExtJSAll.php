@@ -8,13 +8,11 @@ use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 class ExtJSAll extends Base {
 
 	/**
-	 *
 	 * @var ExtJSBase\ITheme
 	 */
 	protected $extjsTheme = null;
 
 	/**
-	 *
 	 * @param array $options
 	 * @param string|null $localBasePath
 	 * @param string|null $remoteBasePath
@@ -52,7 +50,6 @@ class ExtJSAll extends Base {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getTargets() {

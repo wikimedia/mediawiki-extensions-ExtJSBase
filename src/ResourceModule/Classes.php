@@ -11,7 +11,6 @@ class Classes extends Base {
 	protected $subNamespaceSubfolder = '';
 
 	/**
-	 *
 	 * @param array $options
 	 * @param string|null $localBasePath
 	 * @param string|null $remoteBasePath
@@ -45,7 +44,6 @@ class Classes extends Base {
 	}
 
 	/**
-	 *
 	 * @param array $fileExtensions
 	 * @return array
 	 */

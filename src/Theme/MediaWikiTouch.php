@@ -7,13 +7,11 @@ use MediaWiki\Extension\ExtJSBase\ITheme;
 class MediaWikiTouch implements ITheme {
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $basePath = 'mediawiki.extjs/theme-mediawiki-touch';
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getStyleFiles() {
@@ -25,7 +23,6 @@ class MediaWikiTouch implements ITheme {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getScriptFiles() {
@@ -35,7 +32,6 @@ class MediaWikiTouch implements ITheme {
 	}
 
 	/**
-	 *
 	 * @param string $fileName
 	 * @return string
 	 */

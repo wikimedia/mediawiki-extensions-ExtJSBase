@@ -6,7 +6,6 @@ class Config extends \GlobalVarConfig {
 	const THEME = 'Theme';
 
 	/**
-	 *
 	 * @return \Config
 	 */
 	public static function newInstance() {
